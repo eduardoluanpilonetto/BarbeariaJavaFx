@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="506.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barbearia.Controller.CadastroServicoController">
+   <children>
+      <Label fx:id="labelShop" layoutX="76.0" layoutY="24.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Shop" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBarber" layoutX="52.0" layoutY="10.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Barber" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="idls" layoutX="59.0" layoutY="85.0" text="ID" textFill="#796d6d" />
+      <Label fx:id="loginls" layoutX="34.0" layoutY="137.0" text="NOME" textFill="#837979" />
+      <Label fx:id="senhals" layoutX="33.0" layoutY="189.0" text="VALOR" textFill="#7c6b6b" />
+      <TextField fx:id="valors" layoutX="76.0" layoutY="185.0" />
+      <TextField fx:id="nomes" layoutX="76.0" layoutY="133.0" />
+      <TextField fx:id="ids" layoutX="76.0" layoutY="81.0" />
+      <Button fx:id="pesquisars" layoutX="303.0" layoutY="232.0" mnemonicParsing="false" text="Pesquisar" />
+      <Button fx:id="excluirs" layoutX="169.0" layoutY="231.0" mnemonicParsing="false" text="Excluir" />
+      <Button fx:id="editars" layoutX="109.0" layoutY="231.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="novos" layoutX="26.0" layoutY="231.0" mnemonicParsing="false" text="Cadastrar" />
+      <TableView fx:id="tableS" layoutX="236.0" layoutY="24.0" prefHeight="200.0" prefWidth="246.0">
+        <columns>
+          <TableColumn fx:id="IDC" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="NOMEC" prefWidth="121.0" text="NOME" />
+            <TableColumn fx:id="VALORC" prefWidth="75.0" text="VALOR R$" />
+        </columns>
+      </TableView>
+      <Button fx:id="atulizarTabela" layoutX="383.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #00FF00;" text="Atualizar tabela" />
+   </children>
+</AnchorPane>

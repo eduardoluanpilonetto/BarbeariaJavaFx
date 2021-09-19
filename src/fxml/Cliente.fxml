@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="617.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barbearia.Controller.CadastroClienteController">
+   <children>
+      <Label fx:id="labelShop" layoutX="76.0" layoutY="24.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Shop" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBarber" layoutX="52.0" layoutY="10.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Barber" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="idlc" layoutX="59.0" layoutY="85.0" text="ID" textFill="#796d6d" />
+      <Label fx:id="nomelc" layoutX="34.0" layoutY="137.0" text="NOME" textFill="#837979" />
+      <Label fx:id="enderecolc" layoutX="7.0" layoutY="187.0" text="ENDERECO" textFill="#7c6b6b" />
+      <TextField fx:id="endereco" layoutX="76.0" layoutY="183.0" />
+      <TextField fx:id="nome" layoutX="76.0" layoutY="133.0" />
+      <TextField fx:id="idc" layoutX="76.0" layoutY="81.0" />
+      <Button fx:id="pesquisarc" layoutX="412.0" layoutY="279.0" mnemonicParsing="false" text="Pesquisar" />
+      <Button fx:id="excluirc" layoutX="175.0" layoutY="279.0" mnemonicParsing="false" text="Excluir" />
+      <Button fx:id="editarc" layoutX="109.0" layoutY="279.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="novoc" layoutX="25.0" layoutY="279.0" mnemonicParsing="false" text="Cadastrar" />
+      <TextField fx:id="telefone" layoutX="76.0" layoutY="235.0" />
+      <Label fx:id="telefonelc" layoutX="10.0" layoutY="239.0" text="TELEFONE" textFill="#7c6b6b" />
+      <TableView fx:id="tableC" layoutX="236.0" layoutY="33.0" prefHeight="230.0" prefWidth="352.0">
+        <columns>
+          <TableColumn fx:id="CID" prefWidth="43.0" text="ID" />
+          <TableColumn fx:id="CNOME" prefWidth="107.0" text="NOME" />
+            <TableColumn fx:id="CENDERECO" prefWidth="125.0" text="ENDERECO" />
+            <TableColumn fx:id="CTELEFONE" prefWidth="76.0" text="TELEFONE" />
+        </columns>
+      </TableView>
+      <Button fx:id="atulizarTabela" layoutX="489.0" layoutY="279.0" mnemonicParsing="false" style="-fx-background-color: #00FF00;" text="Atualizar tabela" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="176.0" prefWidth="408.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barbearia.Controller.LoginController">
+   <children>
+      <Button id="ButtonSair" fx:id="btnSair" layoutX="290.0" layoutY="128.0" mnemonicParsing="false" text="Sair" />
+      <Button id="buttonLogin" fx:id="btnEntrar" layoutX="225.0" layoutY="128.0" mnemonicParsing="false" text="Entrar" />
+      <PasswordField id="textSenha" fx:id="TextSenha" layoutX="199.0" layoutY="78.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField id="textLogin" fx:id="TextLogin" layoutX="199.0" layoutY="41.0" prefHeight="25.0" prefWidth="181.0" />
+      <Label fx:id="labelSenha" layoutX="153.0" layoutY="82.0" text="SENHA:" textFill="#03f814" />
+      <Label fx:id="labelLogin" layoutX="153.0" layoutY="45.0" prefHeight="17.0" prefWidth="48.0" text="LOGIN:" textFill="#1af501" />
+      <Label fx:id="labelBarber" layoutX="14.0" layoutY="42.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Barber" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelShop" layoutX="47.0" layoutY="63.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Shop" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

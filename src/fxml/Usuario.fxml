@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="265.0" prefWidth="461.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barbearia.Controller.CadastroUsuarioController">
+   <children>
+      <Button fx:id="novoU" layoutX="16.0" layoutY="221.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button fx:id="editaru" layoutX="98.0" layoutY="221.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="excluiru" layoutX="162.0" layoutY="221.0" mnemonicParsing="false" text="Excluir" />
+      <Button fx:id="pesquisaru" layoutX="269.0" layoutY="221.0" mnemonicParsing="false" text="Pesquisar" />
+      <TextField fx:id="idu" layoutX="66.0" layoutY="71.0" />
+      <TextField fx:id="loginu" layoutX="66.0" layoutY="123.0" />
+      <TextField fx:id="senhau" layoutX="66.0" layoutY="175.0" />
+      <Label fx:id="senhalu" layoutX="23.0" layoutY="179.0" text="SENHA" textFill="#7c6b6b" />
+      <Label fx:id="loginlu" layoutX="24.0" layoutY="127.0" text="LOGIN" textFill="#837979" />
+      <Label fx:id="idlu" layoutX="49.0" layoutY="75.0" text="ID" textFill="#796d6d" />
+      <Label fx:id="labelBarber" layoutX="42.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Barber" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelShop" layoutX="66.0" layoutY="14.0" lineSpacing="1.0" prefHeight="49.0" prefWidth="120.0" style="-fx-alignment: #F5FFFA;" text="Shop" textFill="#19fc00" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Georgia Italic" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableU" layoutX="225.0" layoutY="14.0" prefHeight="200.0" prefWidth="221.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="51.0" text="ID" />
+          <TableColumn fx:id="columnLogin" prefWidth="88.0" text="LOGIN" />
+            <TableColumn fx:id="ColumnSenha" prefWidth="86.0" text="SENHA" />
+        </columns>
+      </TableView>
+      <Button fx:id="atulizarTabela" layoutX="347.0" layoutY="221.0" mnemonicParsing="false" style="-fx-background-color: #00FF00;" text="Atualizar tabela" />
+   </children>
+</AnchorPane>
